@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical">
+
+        <TableLayout
+            android:id="@+id/tableSites"
+            android:stretchColumns="*"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            tools:context=".TabSiteFragment">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#73C6B6">
+                <TextView
+                    android:text="Issue #"
+                    android:textSize="7pt"/>
+                <TextView
+                    android:text="Site"
+                    android:textSize="7pt"/>
+                <TextView
+                    android:text="Type"
+                    android:textSize="7pt"/>
+                <TextView
+                    android:text="Assigned"
+                    android:textSize="7pt"/>
+                <TextView
+                    android:text="Status"
+                    android:textSize="7pt"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</FrameLayout>
